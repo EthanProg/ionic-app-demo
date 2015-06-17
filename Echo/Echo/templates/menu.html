@@ -1,0 +1,55 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+            <ion-nav-buttons side="right">
+                <button class="button button-icon button-clear">济南
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+
+    <ion-side-menu side="left" class="dark-bg">
+        <ion-content>
+            <div class="mine-info">
+                <img src="img/i-person.jpg">
+                <div>GOGO</div>
+            </div>
+            <div class="list card dark-bg">
+                <a menu-close href="#/app/playlists" class="item item-icon-left">
+                    <i class="icon ion-home"></i>
+                    首页
+                </a>
+                <a menu-close href="#/app/my-purse" class="item item-icon-left">
+                    <i class="icon ion-ios-filing"></i>
+                    我的钱包
+                </a>
+                <a menu-close href="#/app/enterprise" class="item item-icon-left">
+                    <i class="icon ion-heart"></i>
+                    我的收藏
+                </a>
+
+            </div>
+            <div class="list card dark-bg">
+                <a menu-close href="#" class="item item-icon-left">
+                    <i class="icon ion-gear-a"></i>
+                    设置
+                </a>
+
+                <a menu-close href="#" class="item item-icon-left">
+                    <i class="icon ion-information-circled"></i>
+                    关于我们
+                </a>
+
+            </div>
+
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

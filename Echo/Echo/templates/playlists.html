@@ -1,0 +1,92 @@
+<ion-view view-title="首页">
+  <ion-content>
+      <ion-list>
+          <ion-slide-box on-slide-changed="change(index)" does-continue="true" auto-play="true">
+              <ion-slide>
+                  <img class="banner-img" src="img/banner-1.jpg"/>
+                  <div class="banner-title">Title 1</div>
+              </ion-slide>
+              <ion-slide>
+                  <img class="banner-img" src="img/banner-2.jpg"/>
+                  <div class="banner-title">Title 2</div>
+              </ion-slide>
+              <ion-slide>
+                  <img class="banner-img" src="img/banner-3.jpg"/>
+                  <div class="banner-title">Title 3</div>
+              </ion-slide>
+          </ion-slide-box>
+      </ion-list>
+		<!-- <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+		        {{playlist.title}}
+		      	</ion-item> 
+		      	-->
+      <div class="separate-line"></div>
+      <div class="home-function-area">
+          <ul>
+              <li ng-click="goToEnterprise()">
+                  <img src="img/icon-1.png">
+                  <div>THEME</div>
+              </li><li>
+              <img src="img/icon-2.png">
+              <div>THEME</div>
+          </li><li>
+              <img src="img/icon-3.png">
+              <div>THEME</div>
+          </li><li>
+              <img src="img/icon-4.png">
+              <div>THEME</div>
+          </li><li>
+              <img src="img/icon-5.png">
+              <div>THEME</div>
+          </li><li>
+              <img src="img/icon-6.png">
+              <div>THEME</div>
+          </li><li>
+              <img src="img/icon-5.png">
+              <div>THEME</div>
+          </li><li>
+              <img src="img/icon-4.png">
+              <div>THEME</div>
+          </li>
+          </ul>
+          <div class="separate-line20"></div>
+      </div>
+      <div class="collection-area">
+          <div class="collection-title">任务推荐</div>
+          <div class="get-more">更多<img src="img/arrow-right.png"></div>
+          <div class="separate-line"></div>
+          <div class="collection-item">
+              <div><img src="img/item-1.png"></div>
+              <div class="item-title">多功能保温锅</div>
+              <div class="item-sub-title"><span>进度：</span><span>4/10</span></div>
+          </div><div class="collection-item">
+              <div><img src="img/item-2.jpg"></div>
+              <div class="item-title">多功能保温锅</div>
+              <div class="item-sub-title"><span>进度：</span><span>0/10</span></div>
+          </div><div class="collection-item">
+              <div><img src="img/item-3.jpg"></div>
+              <div class="item-title">多功能保温锅</div>
+              <div class="item-sub-title"><span>进度：</span><span>3/10</span></div>
+          </div><div class="collection-item">
+              <div><img src="img/item-4.jpg"></div>
+              <div class="item-title">多功能保温锅</div>
+              <div class="item-sub-title"><span>进度：</span><span>2/10</span></div>
+          </div><div class="collection-item">
+              <div><img src="img/item-4.jpg"></div>
+              <div class="item-title">多功能保温锅</div>
+              <div class="item-sub-title"><span>进度：</span><span>7/10</span></div>
+          </div><div class="collection-item">
+              <div><img src="img/item-4.jpg"></div>
+              <div class="item-title">多功能保温锅</div>
+              <div class="item-sub-title"><span>进度：</span><span>8/10</span></div>
+          </div>
+      </div>
+      <div class="separate-line20"></div>
+
+
+
+  </ion-content>
+</ion-view>
+
+
+

@@ -1,0 +1,104 @@
+/*common*/
+body{background-color: #f4f4f4; color: #333333;}
+header{height: 44px; width: 100%; background-color: #FF0033; position: fixed; top: 0px; text-align: center; color: #ffffff; border-radius: 1px; z-index: 99999;}
+header>div.left-item{position: fixed; font-size: 17px; top: 10px; left: 10px;}
+header>div.left-item>img{height: 20px;top: -2px; position: relative;}
+header>div.right-item{position: fixed; font-size: 17px; top: 10px; right: 10px;}
+header>div.right-item>img{height: 20px;top: -2px; position: relative;}
+header>div.title{font-size: 20px; padding-top: 8px;}
+ul{list-style-type: none;}
+div.separate-line{background-color: #e9e9e9; height: 1px; width: 100%; margin-top: 10px;}
+div.separate-line10{background-color: #f4f4f4; height: 10px; width: 100%; border-bottom: 1px solid #e9e9e9; border-top: 1px solid #e9e9e9;}
+div.separate-line20{background-color: #f4f4f4; height: 20px; width: 100%; border-bottom: 1px solid #e9e9e9; border-top: 1px solid #e9e9e9;}
+div.no-border-bottom{border-bottom: 0px;}
+div.concern-btn{width: 80px; height: 30px; padding: 5px 10px; background-color: #FF0033; font-size: 14px; color: #ffffff; border-radius: 15px; text-align: center; float: right; position: relative; right: 0px; top: 10px;}
+.out-stand-title>span:nth-child(1){color: orange; font-size: 18px;}
+.nicky-center{text-align: center; margin: auto;}
+.nicky-none{display: none;}
+.platform-android .action-sheet .action-sheet-title{border-color: #d1d3d6; text-align: center;}
+.platform-android .action-sheet .button{color: #007aff;border-color: #d1d3d6; text-align: center;}
+.platform-android .action-sheet, .platform-android .action-sheet .button.destructive{color: #ff3b30;}
+
+/*index.html*/
+div.slider-pager{bottom: 5px; text-align: right; padding-right: 10px;}
+img.banner-img{width: 100%; height: 180px;}
+div.banner-title{margin-left: 10px;}
+div.home-function-area>ul{padding: 20px 10px 20px 10px;}
+div.home-function-area>ul>li{display: inline-block; width: 25%; text-align: center; margin-bottom: 10px;}
+div.home-function-area>ul>li>img{width: 60%;}
+div.collection-area{padding: 10px 10px; background-color: #ffffff;}
+div.collection-title{font-size: 16px;}
+div.get-more{float: right; height: 0px; position: relative; top: -20px;}
+div.get-more>img{width: 12px;}
+div.collection-item{width: 33.33%; display: inline-block; margin-top: 20px;}
+div.collection-item>div>img{margin-bottom: 10px; width: 80%;}
+div.collection-item>div:nth-child(1){width: 100%; text-align: center;}
+div.item-sub-title>span:nth-child(1){color: #666666; font-size: 12px;}
+div.item-sub-title>span:nth-child(2){color: #FF0033;}
+/*target-detail*/
+div.mine-top {width: 100%; height: 140px;}
+img.mine-shop-pic {width: 100%;height: 140px;}
+div.mine-summary {background-color: white; width: 100%; padding: 10px; border-top: 1px solid #e9e9e9;}
+p.shop-title {padding-top: 10px;font-size: 16px;}
+ul.shop-summary {list-style: none;color: gray;font-size: 12px;padding-left: 0px;margin-bottom: 10px;}
+ul li.shop-info {margin-top: 8px;display: inline-block;}
+div.target-area{background-color: #ffffff; padding: 10px;}
+div.target-info>div:nth-child(odd){color: #777777; font-size: 12px;}
+div.target-info>div:nth-child(2){margin-bottom: 10px;}
+table.td-table{background-color: #ffffff; width: 100%; margin-bottom: 20px;}
+table.td-table tr{border-bottom: 1px solid #e9e9e9;}
+table.td-table tr td{padding: 10px;}
+table.td-table tr td>img{width: 85px; height: 85px;}
+div.good-title{margin-bottom: 5px;}
+div.sub-title1>span:nth-child(1){color: #666666; font-size: 10px;}
+div.sub-title1>span:nth-child(2){color: orange;}
+div.sub-title2>span:nth-child(1){color: #666666; font-size: 10px;}
+div.sub-title2>span:nth-child(2){color: orange; }
+
+div.wrap-area{width: 100%; height: 50px; overflow: hidden;}
+div.wrap-area>div{width: 100%;height: 70px; font-size: 16px; overflow: auto; background-color: #ffffff; padding-left: 15px;}
+div.wrap-item{display: inline-block; color: #999999; margin-right: 20px; margin-top: 16px; font-size: 14px;}
+div.wrap-item.active-item{font-size: 18px; margin-top: 14px; color: #FF0033;}
+div.expand-btn{background-color: #ffffff; float: right; position: relative; width: 0px; top: -32px; right: 0px; border-left: 1px solid #e9e9e9;}
+div.expand-btn>img{width: 50px; position: relative; float: right;}
+
+/*enterprise*/
+.item.item-thumbnail-left.multi-line-sub-title.rect-pic>img{border-radius: 5px !important;}
+.multi-line-sub-title>p{white-space: normal; -webkit-line-clamp: 2; text-overflow: ellipsis; display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+
+/*menu*/
+div.mine-info{text-align: center; margin: 50px 0px 30px 0px;}
+div.mine-info>img{width: 80px; border-radius: 40px;}
+div.mine-info>div{color: #ffffff;}
+
+/*third-parts*/
+.item-avatar > img:first-child, .item-avatar .item-image, .item-avatar .item-content > img:first-child, .item-avatar .item-content .item-image, .item-avatar-left > img:first-child, .item-avatar-left .item-image, .item-avatar-left .item-content > img:first-child, .item-avatar-left .item-content .item-image {
+    top: 10px;
+    left: 12px;
+}
+
+.item-avatar > img:first-child, .item-avatar .item-image, .item-avatar .item-content > img:first-child, .item-avatar .item-content .item-image, .item-avatar-left > img:first-child, .item-avatar-left .item-image, .item-avatar-left .item-content > img:first-child, .item-avatar-left .item-content .item-image {
+    max-width: 50px !important;
+    max-height: 50px !important;
+    border-radius: 25px !important;
+}
+
+.item-thumbnail > img:first-child, .item-thumbnail .item-image, .item-thumbnail .item-content > img:first-child, .item-avatar .item-content .item-image, .item-thumbnail-left > img:first-child, .item-thumbnail-left .item-image, .item-thumbnail-left .item-content > img:first-child, .item-thumbnail-left .item-content .item-image {
+    /*max-width: 50px !important;*/
+    /*max-height: 50px !important;*/
+    border-radius: 40px !important;
+}
+
+
+.menu-left .item {
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #333;
+    color: #F0F1F1;
+}
+
+.menu-left .item-complex .item-content, .menu-left .item-radio .item-content {
+    background-color: transparent;
+}

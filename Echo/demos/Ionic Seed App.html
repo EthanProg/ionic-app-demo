@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Ionic Seed App</title>
+
+    <link href="../Echo/lib/ionic/css/ionic.css" rel="stylesheet">
+    <script src="../Echo/lib/ionic/js/ionic.bundle.min.js"></script>
+    <style>
+        .ionic-contrib-frost {
+            overflow: hidden;
+            position:absolute;
+            width: 100%;
+            top:0;
+            left:0;
+            right:0;
+            -webkit-filter:blur(10px);
+            opacity:1;
+            z-index: 10;
+        }
+        .dark-overlay {
+            background-color: #222 !important;
+            opacity: 0.8;
+        }
+        .dark-item {
+            background-color: transparent !important;
+            color: #fff !important;
+            border-color: #444 !important;
+        }
+        .close-icon:before {
+            font-size: 40px !important;
+        }
+        .bar-clear {
+            background: none;
+        }
+        .overlay-spacer {
+            height: 100px;
+        }
+        .content-flush {
+            top: 0px !important;
+        }
+    </style>
+    <!-- angularjs scripts -->
+    <script src="../Echo/js/ionic.contrib.frost.js"></script>
+    <script>
+
+    </script>
+</head>
+
+<!--
+  'starter' is the name of this angular module (js/app.js)
+-->
+<body ng-app="starter">
+
+<ion-pane frost ng-controller="UnderCtrl">
+    <ion-header-bar class="bar-dark">
+        <h1 class="title">Under content</h1>
+    </ion-header-bar>
+    <ion-content class="has-header">
+        <button class="button button-block button-balanced">A Bright Button</button>
+        <ion-list>
+            <ion-item ng-repeat="item in items">
+                {{item.text}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-pane>
+<ion-pane ng-controller="OverlayCtrl" class="dark-overlay">
+    <ion-header-bar class="bar-clear">
+        <button class="button button-icon ion-ios7-close-empty close-icon pull-right"></button>
+    </ion-header-bar>
+    <ion-content class="content-flush has-header">
+        <div class="overlay-spacer"></div>
+        <ion-list>
+            <ion-item ng-repeat="item in items" class="dark-item">
+                {{item.text}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-pane>
+<script>
+    angular.module('starter', ['ionic', 'ionic.contrib.frost'])
+            .controller('UnderCtrl', function($scope) {
+                $scope.items = [];
+                for(var i = 0; i < 30; i++) {
+                    $scope.items.push({text: 'Item ' + (i+1) });
+                }
+            })
+            .controller('OverlayCtrl', function($scope) {
+                $scope.items = [];
+                for(var i = 0; i < 5; i++) {
+                    $scope.items.push({text: 'Option' + (i+1) });
+                }
+            });
+</script>
+</body>
+</html>

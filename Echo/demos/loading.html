@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="LoadingApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../Echo/lib/ionic/css/ionic.css" rel="stylesheet">
+    <script src="../Echo/lib/ionic/js/ionic.bundle.min.js"></script>
+    <script>
+        angular.module('LoadingApp', ['ionic'])
+                .controller('LoadingCtrl', function($scope, $ionicLoading) {
+                    $scope.show = function() {
+                        $ionicLoading.show({
+                            // template: 'Loading...'
+                            templateUrl:'spinner-icon.html',
+                            duration:3000
+                        });
+                    };
+                    $scope.hide = function(){
+                        $ionicLoading.hide();
+                    };
+                });
+    </script>
+</head>
+<body ng-controller="LoadingCtrl">
+    <button ng-click="show()">show</button>
+    <button ng-click="hide()">hide</button>
+</body>
+</html>
